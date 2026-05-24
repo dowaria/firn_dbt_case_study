@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging_schema
+    database: FIRN_CASE_STUDY
+    schema: STAGING_SCHEMA
+    tables:
+      - name: EV_ROAM_CHARGING_STATIONS
+      - name: MOTOR_VEHICLE_REGISTER

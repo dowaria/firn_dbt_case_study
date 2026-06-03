@@ -7,3 +7,5 @@ WHERE
     first_operational_date IS NOT NULL
 GROUP BY
     YEAR(try_to_date(first_operational_date))
+Order by 
+    Station_year

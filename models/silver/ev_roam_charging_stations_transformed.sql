@@ -36,7 +36,9 @@ with
             latitude,
             longitude,
             has_charging_cost,
-            case when has_charging_cost = 'TRUE' then 'Paid' else 'Free' end as charing_cost,
+            case
+                when has_charging_cost = 'TRUE' then 'Paid' else 'Free'
+            end as charing_cost,
             is_24_hours,
             global_id,
             first_operational_date,
